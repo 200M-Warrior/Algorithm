@@ -29,6 +29,6 @@ def count_ones_up_to(n):
         i += 1
     return count
 
-# 누적합: f(E) - f(S-1)
+# f(E) - f(S-1)
 ans = count_ones_up_to(E) - count_ones_up_to(S - 1)
 print(ans)
