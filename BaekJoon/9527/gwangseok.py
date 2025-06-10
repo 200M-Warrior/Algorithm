@@ -12,7 +12,7 @@ def get_sum(str_bin, cnt):
     if str_bin[0] == '1':
         border = '1' + '0' * (len(str_bin) - 1)  # 제일 앞이 1이고 나머지가 0인 이진수  : 1000...0
         cnt += cum_sums[len(str_bin) - 2]  # border보다 작은 이진수의 1의 개수 합       : 1 ~ 0111...1  
-        cnt += (int(str_bin, 2) - int(border, 2) + 1)  # 제일 파이 1인 수의 개수       : 현재 수 - (border - 1) 만큼 있음.
+        cnt += (int(str_bin, 2) - int(border, 2) + 1)  # 제일 앞이 1인 수의 개수       : 현재 수 - (border - 1) 만큼 있음.
 
     cnt = get_sum(str_bin[1:], cnt)  # Reursive하게 위에서 구한 것 나머지의 1의 개수를 구함.
 
