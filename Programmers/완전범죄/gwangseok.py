@@ -1,3 +1,6 @@
+# 0-1 knapsack을 응용한다.
+# B에 최대한 많이 넣어서, dp에는 남은 A의 흔적을 넣는다.
+
 def solution(info, n, m):
     # O(len(info))
     sum_a_footprints = sum([a_footprint for a_footprint, _ in info])
