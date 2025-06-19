@@ -22,6 +22,7 @@ body:
       options:
         - LEVEL2
         - LEVEL3
+        - Level4
         - Medium
         - Hard
         - Silver
